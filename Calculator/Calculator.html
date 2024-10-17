@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup and Login Calculator</title>
+    <link rel="stylesheet" href="./Calculator.css">
+    
+</head>
+<body>
+
+    <!-- Signup Section -->
+    <div id="signupSection">
+        <h2>Signup</h2>
+        <form id="signupForm">
+            <label for="name">Name</label>
+            <input type="text" id="signupName" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="signupEmail" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="signupPassword" required>
+
+            <label for="operator">Choose Operator</label>
+            <select id="signupOperator" required>
+                <option value="addition">Addition (+)</option>
+                <option value="subtraction">Subtraction (-)</option>
+                <option value="multiplication">Multiplication (*)</option>
+            </select>
+
+            <button id="button1" type="button" onclick="signup()">Submit</button>
+        </form>
+    </div>
+
+    <!-- Login Section -->
+    <div id="loginSection" class="hidden">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="loginEmail">Email</label>
+            <input type="email" id="loginEmail" required>
+
+            <label for="loginPassword">Password</label>
+            <input type="password" id="loginPassword" required>
+
+            <button id="login1" type="button" onclick="login()">Login</button>
+        </form>
+    </div>
+
+    <!-- Calculator Section -->
+    <div id="calculatorSection" class="hidden">
+        <h3>You have registered for <span id="operationType"></span></h3>
+        <h3>Welcome, <span id="welcomeUser"></span></h3>
+        <form id="calculatorForm">
+            <label for="input1">Input 1</label>
+            <input type="number" id="input1" required>
+
+            <label for="input2">Input 2</label>
+            <input type="number" id="input2" required>
+
+            <label for="output">Output</label>
+            <input type="text" id="output" readonly>
+
+            <button type="button" onclick="calculate()">Calculate</button>
+        </form>
+    </div>
+    <script src="./Calculator.js"></script>
+</body>
+</html>

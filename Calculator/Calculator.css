@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+form {
+    margin: 20px 0;
+}
+input, select, button {
+    display: block;
+    margin: 10px 0;
+    padding: 5px;
+    width: 100%;
+    max-width: 300px;
+}
+.hidden {
+    display: none;
+}
+h2, h3 {
+    margin: 10px 0;
+}
+#button1{
+    background-color: green;
+    color: white;
+}
+#login1{
+    background-color: green;
+    color: white;
+}
